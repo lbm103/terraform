@@ -9,7 +9,7 @@ variable "server_port" {
 }
 
 resource "aws_security_group" "instance" {
-  name = "terraform-example-instance2"
+  name = "terraform-example-instance"
   ingress {
     from_port	= "${var.server_port}"
     to_port	= "${var.server_port}"
